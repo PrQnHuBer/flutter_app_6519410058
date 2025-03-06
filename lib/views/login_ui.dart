@@ -10,6 +10,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 30),
         child: Center(
@@ -52,7 +53,10 @@ class _LoginPageState extends State<LoginPage> {
                   height: 50,
                   child: ElevatedButton(
                       onPressed: () {},
-                      child: Text("LOG IN", style: TextStyle(fontSize: 16)))),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color.fromARGB(255, 28, 41, 228),
+                      ),
+                      child: Text("LOG IN", style: TextStyle(fontSize: 16 , color: Colors.white )),)),
               SizedBox(height: 10),
               Text("Or login with", style: TextStyle(color: Colors.grey)),
               SizedBox(height: 10),

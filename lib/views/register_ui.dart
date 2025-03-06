@@ -1,5 +1,3 @@
-// ignore_for_file: sort_child_properties_last
-
 import 'package:flutter/material.dart';
 
 class RegisterUi extends StatefulWidget {
@@ -11,6 +9,7 @@ class _RegisterUiState extends State<RegisterUi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -28,8 +27,7 @@ class _RegisterUiState extends State<RegisterUi> {
               child: Column(
                 children: [
                   Text("Let's Get Started!",
-                      style:
-                          TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+                      style: TextStyle(fontSize:26, fontWeight: FontWeight.bold)),
                   SizedBox(height: 5),
                   Text("Create new account for Flutter Dev.",
                       style: TextStyle(fontSize: 14, color: Colors.grey)),
@@ -38,54 +36,118 @@ class _RegisterUiState extends State<RegisterUi> {
               ),
             ),
             TextField(
-                decoration: InputDecoration(
-                    hintText: "ป้อนรหัสนักศึกษา",
-                    prefixIcon: Icon(Icons.person),
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10)))),
+              decoration: InputDecoration(
+                hintText: "ป้อนรหัสนักศึกษา",
+                prefixIcon: Icon(Icons.person, color: Colors.blue), // ไอคอนสีฟ้า
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเป็นสีฟ้า
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเมื่อ focus เป็นสีฟ้า
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเมื่อไม่ได้ focus เป็นสีฟ้า
+                ),
+              ),
+            ),
             SizedBox(height: 10),
             TextField(
-                decoration: InputDecoration(
-                    hintText: "ป้อนอีเมล์",
-                    prefixIcon: Icon(Icons.email),
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10)))),
+              decoration: InputDecoration(
+                hintText: "ป้อนอีเมล์",
+                prefixIcon: Icon(Icons.email, color: Colors.blue), // ไอคอนสีฟ้า
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเป็นสีฟ้า
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเมื่อ focus เป็นสีฟ้า
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเมื่อไม่ได้ focus เป็นสีฟ้า
+                ),
+              ),
+            ),
             SizedBox(height: 10),
             TextField(
-                decoration: InputDecoration(
-                    hintText: "ป้อนเบอร์โทรศัพท์",
-                    prefixIcon: Icon(Icons.phone),
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10)))),
+              decoration: InputDecoration(
+                hintText: "ป้อนเบอร์โทรศัพท์",
+                prefixIcon: Icon(Icons.phone, color: Colors.blue), // ไอคอนสีฟ้า
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเป็นสีฟ้า
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเมื่อ focus เป็นสีฟ้า
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเมื่อไม่ได้ focus เป็นสีฟ้า
+                ),
+              ),
+            ),
             SizedBox(height: 10),
             TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                    hintText: "ป้อนรหัสผ่าน",
-                    prefixIcon: Icon(Icons.lock),
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10)))),
+              obscureText: true,
+              decoration: InputDecoration(
+                hintText: "ป้อนรหัสผ่าน",
+                prefixIcon: Icon(Icons.lock, color: Colors.blue), // ไอคอนสีฟ้า
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเป็นสีฟ้า
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเมื่อ focus เป็นสีฟ้า
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเมื่อไม่ได้ focus เป็นสีฟ้า
+                ),
+              ),
+            ),
             SizedBox(height: 10),
             TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                    hintText: "ป้อนยืนยันรหัสผ่าน",
-                    prefixIcon: Icon(Icons.lock),
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10)))),
+              obscureText: true,
+              decoration: InputDecoration(
+                hintText: "ป้อนยืนยันรหัสผ่าน",
+                prefixIcon: Icon(Icons.lock, color: Colors.blue), // ไอคอนสีฟ้า
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเป็นสีฟ้า
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเมื่อ focus เป็นสีฟ้า
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(color: Colors.blue), // กรอบเมื่อไม่ได้ focus เป็นสีฟ้า
+                ),
+              ),
+            ),
             SizedBox(height: 20),
             SizedBox(
               width: double.infinity,
               height: 50,
               child: ElevatedButton(
                 onPressed: () {},
-                child: Text("REGISTER", style: TextStyle(fontSize: 16)),
                 style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10))),
+                  backgroundColor: const Color.fromARGB(255, 46, 25, 236), // สีพื้นหลังปุ่ม
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+                child: Text("REGISTER", style: TextStyle(fontSize: 16,color: Colors.white)),
               ),
             ),
             SizedBox(height: 20),
+            // ลิงก์ไปยังหน้า Login
             Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
