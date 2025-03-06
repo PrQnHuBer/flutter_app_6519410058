@@ -30,19 +30,49 @@ class _LoginPageState extends State<LoginPage> {
                   style: TextStyle(fontSize: 14, color: Colors.grey)),
               SizedBox(height: 20),
               TextField(
-                  decoration: InputDecoration(
-                      hintText: "ป้อนรหัสนักศึกษา",
-                      prefixIcon: Icon(Icons.person),
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10)))),
+                decoration: InputDecoration(
+                  hintText: "ป้อนรหัสนักศึกษา",
+                  prefixIcon:
+                      Icon(Icons.person, color: Colors.blue), // ไอคอนเป็นสีฟ้า
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide(color: Colors.blue), // กรอบเป็นสีฟ้า
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide:
+                        BorderSide(color: Colors.blue), // กรอบสีฟ้าเมื่อ focus
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide(
+                        color: Colors.blue), // กรอบสีฟ้าเมื่อไม่ได้ focus
+                  ),
+                ),
+              ),
               SizedBox(height: 10),
               TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                      hintText: "ป้อนรหัสผ่าน",
-                      prefixIcon: Icon(Icons.lock),
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10)))),
+                obscureText: true,
+                decoration: InputDecoration(
+                  hintText: "ป้อนรหัสผ่าน",
+                  prefixIcon:
+                      Icon(Icons.lock, color: Colors.blue), // ไอคอนเป็นสีฟ้า
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide(color: Colors.blue), // กรอบเป็นสีฟ้า
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide:
+                        BorderSide(color: Colors.blue), // กรอบสีฟ้าเมื่อ focus
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide(
+                        color: Colors.blue), // กรอบสีฟ้าเมื่อไม่ได้ focus
+                  ),
+                ),
+              ),
               SizedBox(height: 10),
               Align(
                   alignment: Alignment.centerRight,
@@ -52,11 +82,13 @@ class _LoginPageState extends State<LoginPage> {
                   width: double.infinity,
                   height: 50,
                   child: ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color.fromARGB(255, 28, 41, 228),
-                      ),
-                      child: Text("LOG IN", style: TextStyle(fontSize: 16 , color: Colors.white )),)),
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 28, 41, 228),
+                    ),
+                    child: Text("LOG IN",
+                        style: TextStyle(fontSize: 16, color: Colors.white)),
+                  )),
               SizedBox(height: 10),
               Text("Or login with", style: TextStyle(color: Colors.grey)),
               SizedBox(height: 10),
@@ -67,10 +99,10 @@ class _LoginPageState extends State<LoginPage> {
                       backgroundColor: Colors.blueAccent,
                     ),
                     icon: Icon(Icons.facebook, color: Colors.white),
-                    label: Text("Facebook",
-                     style: TextStyle(color: Colors.white),
-                     )
-                     ),
+                    label: Text(
+                      "Facebook",
+                      style: TextStyle(color: Colors.white),
+                    )),
                 SizedBox(width: 10),
                 OutlinedButton.icon(
                     onPressed: () {},
@@ -78,10 +110,10 @@ class _LoginPageState extends State<LoginPage> {
                       backgroundColor: Colors.red,
                     ),
                     icon: Icon(Icons.g_mobiledata, color: Colors.white),
-                    label: Text("Google",
-                       style: TextStyle(color: Colors.white),
-                       )
-                    ),
+                    label: Text(
+                      "Google",
+                      style: TextStyle(color: Colors.white),
+                    )),
               ]),
               SizedBox(height: 20),
               Row(mainAxisAlignment: MainAxisAlignment.center, children: [
